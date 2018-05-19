@@ -1,0 +1,15 @@
+Exception has occured: No item exist in StoreCatalog with entered itemIdentifier: 9 
+se.kth.ict.pos.model.InvalidItemIdentifierException: No item exist in StoreCatalog with entered itemIdentifier: 9 
+	at se.kth.ict.pos.model.StoreCatalog.findItemSpecification(StoreCatalog.java:45)
+	at se.kth.ict.pos.controller.Controller.enterItemIdentifier(Controller.java:61)
+	at se.kth.ict.pos.view.View.testExecution(View.java:49)
+	at se.kth.ict.pos.startup.Main.main(Main.java:25)
+Exception has occured: Database Failure
+se.kth.ict.pos.controller.FailedOperationException: Database Failure
+	at se.kth.ict.pos.controller.Controller.enterItemIdentifier(Controller.java:66)
+	at se.kth.ict.pos.view.View.testExecution(View.java:59)
+	at se.kth.ict.pos.startup.Main.main(Main.java:25)
+Caused by: se.kth.ict.pos.model.StoreCatalogException: Database failure
+	at se.kth.ict.pos.model.StoreCatalog.findItemSpecification(StoreCatalog.java:43)
+	at se.kth.ict.pos.controller.Controller.enterItemIdentifier(Controller.java:61)
+	... 2 more
